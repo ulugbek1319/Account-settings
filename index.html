@@ -4,16 +4,79 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project</title>
-
+  <title>Account settings</title>
+  
+  <!-- GOOGLE-FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  
+  <div class="global-wrapper">
+    <header class="site-header">
+      <div class="container">
+        <div class="sitenav">
+          <h2 class="site-heading">Account settings</h2>
+          <a class="site-header-img" href="#">
+            <img class="site-header-link" src="img/x-icon.svg" alt="x-icon" width="20" height="20">
+          </a>
+        </div>
+      </div>
+    </header>
+    
+    
+    <main class="main-content">
+      <div class="container">
+        <div class="user-info">
+          <div class="container">
+            <form class="user-info-form" action="https://echo.htmlacademy.ru">
+              <img class="user-info-img" src="img/man-img.webp" alt="man-img" width="80" height="75">
+              
+              <div class="user-info-list">
+                <div class="user-info-item">
+                  <label class="user-info-item-label" for="username">Username</label>              
+                  <input class="user-info-item-input" id="username" type="text" name="Username" placeholder="Enter your username" aria-label="Enter your username" required>
+                </div>
+                
+                <div class="first-and-last-name">
+                  <div class="user-info-item user-info-item-first">
+                    <label class="user-info-item-label" for="firstname">First name</label>
+                    <input class="user-info-item-input" id="firstname" type="text" name="First name" placeholder="Enter your first name" aria-label="First name" required>
+                  </div>
+                  
+                  <div class="user-info-item user-info-item-last">
+                    <label class="user-info-item-label" for="lastname">Last name</label>
+                    <input class="user-info-item-input" id="lastname" type="text" name="Last name" placeholder="Enter your last name" aria-label="Last name" required>
+                  </div>
+                </div>
+                
+                <div class="user-info-item">
+                  <label class="user-info-item-label" for="email">Email</label>
+                  <input class="user-info-item-input" id="email" type="email" name="Email" placeholder="Enter your email" aria-label="Enter your email" required>
+                </div>
+                
+                <div class="user-info-item">
+                  <label class="user-info-item-label" for="bio">Bio</label>
+                  <textarea class="user-info-item-input user-info-item-input-bio" cols="30" rows="5" minlength="10" maxlength="20" id="bio" name="Bio" placeholder="Tell us about yourself" aria-label="Tell us about yourself"></textarea>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
 
-
-
+  
+  
+  
+  
+  
   <script src="js/main.js"></script>
 </body>
 </html>
