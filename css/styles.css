@@ -66,6 +66,7 @@ img {
   padding-right: 30px;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 5px;
   background-color: yellow;
 }
 
@@ -74,7 +75,7 @@ img {
 .main-content {
   position: relative;
   flex-grow: 1;
-  padding-bottom: 680px;
+  padding-bottom: 600px;
 }
 
 
@@ -121,6 +122,8 @@ img {
   width: 660px;
   border-radius: 5px;
   background-color: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  flex-shrink: 1;
 }
 
 .user-info-form {
@@ -181,10 +184,42 @@ img {
 
 .user-info-item-input-bio {
   max-width: 600px;
+  max-height: 120px;
   min-width: 600px;
   min-height: 100px;
 }
 
+
+/* SITE-FOOTER */
+.site-footer {
+  padding-bottom: 20px;
+}
+
+.site-footer-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.site-footer-link {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  color: #666;
+  text-decoration: none;
+}
+
+.site-footer-link:not(:last-child) {
+  margin-right: 30px;
+}
+
+.site-footer-link:hover {
+  opacity: 0.8;
+}
+
+.site-footer-link:active {
+  opacity: 0.5;
+}
 
 
 @media
